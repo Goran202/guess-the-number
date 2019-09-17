@@ -5,10 +5,10 @@ const GuessTryNumber = () => {
     height: 40,
     width: 200,
     margin: 'auto',
-    //backgroundColor: 'blue',
-    color: 'yellow',
+    //  backgroundColor: 'blue',
+    color: 'black',
   };
-  return <div style={styles}>hint</div>;
+  return <div style={styles}>GuessTryNumber</div>;
 };
 
 export default GuessTryNumber;

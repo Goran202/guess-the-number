@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GuessButton = () => {
+const DebugDiv = (props) => {
   const styles = {
     height: 40,
     width: 200,
@@ -8,7 +8,7 @@ const GuessButton = () => {
     backgroundColor: 'green',
     color: 'black',
   };
-  return <div style={styles}>GuessButton</div>;
+  return <div style={styles}>DebugDiv: {props.number}</div>;
 };
 
-export default GuessButton;
+export default DebugDiv;

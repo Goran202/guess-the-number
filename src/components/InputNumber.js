@@ -6,10 +6,10 @@ const InputNumber = () => {
     width: 200,
     margin: 'auto',
 
-    backgroundColor: 'white',
+    backgroundColor: 'orange',
     color: 'black',
   };
-  return <div style={styles}>Some TEXT</div>;
+  return <div style={styles}>InputNumber</div>;
 };
 
 export default InputNumber;

@@ -8,7 +8,7 @@ const Hint = () => {
     backgroundColor: 'blue',
     color: 'yellow',
   };
-  return <div style={styles}>hint</div>;
+  return <div style={styles}>Hint</div>;
 };
 
 export default Hint;

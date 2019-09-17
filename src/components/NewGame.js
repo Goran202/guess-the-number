@@ -9,7 +9,7 @@ const NewGame = () => {
     backgroundColor: 'blue',
     color: 'black',
   };
-  return <div style={styles}>Some TEXT</div>;
+  return <div style={styles}>NewGame</div>;
 };
 
 export default NewGame;
