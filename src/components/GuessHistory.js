@@ -4,7 +4,8 @@ const GuessHistory = (props) => {
   const styles = {
     height: 40,
     width: 200,
-    margin: 'auto',
+    marginTop: 20,
+
     backgroundColor: 'grey',
     color: 'black',
   };
