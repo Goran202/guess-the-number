@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hint = () => {
+const Hint = (props) => {
   const styles = {
     height: 40,
     width: 200,
@@ -8,7 +8,7 @@ const Hint = () => {
     backgroundColor: 'blue',
     color: 'yellow',
   };
-  return <div style={styles}>Hint</div>;
+  return <div style={styles}>{props.hintText}</div>;
 };
 
 export default Hint;

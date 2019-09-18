@@ -1,15 +1,20 @@
 import React from 'react';
+import { tsPropertySignature } from '@babel/types';
 
-const NewGame = () => {
+const NewGame = (props) => {
   const styles = {
     height: 40,
     width: 200,
     margin: 'auto',
-
+    display: 'block',
     backgroundColor: 'blue',
     color: 'black',
   };
-  return <div style={styles}>NewGame</div>;
+  return (
+    <button style={styles} onClick={props.resetGame}>
+      NEW GAME{' '}
+    </button>
+  );
 };
 
 export default NewGame;

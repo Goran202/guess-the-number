@@ -8,7 +8,7 @@ const DebugDiv = (props) => {
     backgroundColor: 'green',
     color: 'black',
   };
-  return <div style={styles}>DebugDiv: {props.number}</div>;
+  return <div style={styles}>DebugDiv: {props.numberToGuess}</div>;
 };
 
 export default DebugDiv;

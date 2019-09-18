@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GuessHistory = () => {
+const GuessHistory = (props) => {
   const styles = {
     height: 40,
     width: 200,
@@ -8,7 +8,7 @@ const GuessHistory = () => {
     backgroundColor: 'grey',
     color: 'black',
   };
-  return <div style={styles}>GuessHistory</div>;
+  return <div style={styles}>GuessHistory: {props.guessHistoryString}</div>;
 };
 
 export default GuessHistory;
