@@ -2,16 +2,13 @@ import React from 'react';
 
 const InputNumber = (props) => {
   const styles = {
-    height: 40,
-    width: 200,
-    marginTop: 20,
-    display: 'block',
     backgroundColor: 'orange',
     color: 'black',
   };
   return (
     <form onSubmit={props.handleInput}>
       <input
+        className="block"
         type="number"
         min="1"
         max="100"
@@ -20,6 +17,7 @@ const InputNumber = (props) => {
         style={styles}
       />
       <input
+        className="block"
         style={styles}
         type="button"
         value="Make a guess!"

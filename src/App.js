@@ -8,6 +8,7 @@ import GuessHistory from './components/GuessHistory';
 import NewGame from './components/NewGame';
 import Instructions from './components/Instructions';
 import DebugDiv from './components/DebugDiv';
+import './components/style.css';
 
 class App extends Component {
   state = {

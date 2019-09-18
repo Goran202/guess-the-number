@@ -2,13 +2,14 @@ import React from 'react';
 
 const Hint = (props) => {
   const styles = {
-    height: 40,
-    width: 200,
-    marginTop: 20,
     backgroundColor: 'blue',
     color: 'yellow',
   };
-  return <div style={styles}>{props.hintText}</div>;
+  return (
+    <div className="block" style={styles}>
+      {props.hintText}
+    </div>
+  );
 };
 
 export default Hint;
