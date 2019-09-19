@@ -17,7 +17,7 @@ const InputNumber = (props) => {
         style={styles}
       />
       <input
-        className="block"
+        className="block btn"
         style={styles}
         type="button"
         value="Make a guess!"

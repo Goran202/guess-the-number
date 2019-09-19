@@ -6,7 +6,7 @@ const GuessButton = () => {
     color: 'black',
   };
   return (
-    <div className="block" style={styles}>
+    <div className="block btn" style={styles}>
       GuessButton
     </div>
   );

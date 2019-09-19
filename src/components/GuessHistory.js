@@ -6,7 +6,7 @@ const GuessHistory = (props) => {
     color: 'black',
   };
   return (
-    <div className="block" style={styles}>
+    <div className="block btn" style={styles}>
       GuessHistory: {props.guessHistoryString}
     </div>
   );

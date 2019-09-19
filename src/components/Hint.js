@@ -6,7 +6,7 @@ const Hint = (props) => {
     color: 'yellow',
   };
   return (
-    <div className="block" style={styles}>
+    <div className="block btn" style={styles}>
       {props.hintText}
     </div>
   );

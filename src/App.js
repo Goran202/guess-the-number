@@ -66,6 +66,7 @@ class App extends Component {
   render() {
     return (
       <>
+        <h1 style={{ color: 'white' }}>Guess the number!</h1>
         <DebugDiv numberToGuess={this.state.numberToGuess} />
         <Hint hintText={this.state.hintText} />
         <InputNumber

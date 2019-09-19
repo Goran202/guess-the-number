@@ -6,7 +6,7 @@ const DebugDiv = (props) => {
     color: 'black',
   };
   return (
-    <div className="block" style={styles}>
+    <div className="block btn" style={styles}>
       DebugDiv: {props.numberToGuess}
     </div>
   );

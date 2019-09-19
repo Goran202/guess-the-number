@@ -6,7 +6,7 @@ const NewGame = (props) => {
     color: 'black',
   };
   return (
-    <button className="block" style={styles} onClick={props.resetGame}>
+    <button className="block btn" style={styles} onClick={props.resetGame}>
       NEW GAME{' '}
     </button>
   );
