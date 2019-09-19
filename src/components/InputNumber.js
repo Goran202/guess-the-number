@@ -2,13 +2,14 @@ import React from 'react';
 
 const InputNumber = (props) => {
   const styles = {
-    backgroundColor: 'orange',
-    color: 'black',
+    // backgroundColor: 'orange',
+    // color: 'black',
   };
   return (
     <form onSubmit={props.handleInput}>
       <input
-        className="block"
+        placeholder="Type in your guess..."
+        className="block form-control"
         type="number"
         min="1"
         max="100"
@@ -17,7 +18,7 @@ const InputNumber = (props) => {
         style={styles}
       />
       <input
-        className="block btn"
+        className="block btn btn-primary"
         style={styles}
         type="button"
         value="Make a guess!"

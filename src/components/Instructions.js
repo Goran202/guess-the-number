@@ -2,11 +2,11 @@ import React from 'react';
 
 const Instructions = () => {
   const styles = {
-    backgroundColor: 'pink',
-    color: 'yellow',
+    // backgroundColor: 'pink',
+    // color: 'yellow',
   };
   return (
-    <div className="block btn" style={styles}>
+    <div className="block btn btn-info" style={styles}>
       Instructions
     </div>
   );

@@ -2,12 +2,13 @@ import React from 'react';
 
 const GuessHistory = (props) => {
   const styles = {
-    backgroundColor: 'grey',
-    color: 'black',
+    // backgroundColor: 'grey',
+    // color: 'black',
+    whiteSpace: 'nowrap',
   };
   return (
-    <div className="block btn" style={styles}>
-      GuessHistory: {props.guessHistoryString}
+    <div className="block btn btn-secondary" style={styles}>
+      Guesses: {props.guessHistoryString}
     </div>
   );
 };

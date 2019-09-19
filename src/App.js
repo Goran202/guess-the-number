@@ -15,7 +15,7 @@ class App extends Component {
     numberToGuess: '',
     currentNumber: '',
     currentGuessNumber: '',
-    hintText: '',
+    hintText: "I'll give you a hint",
     numberOfGuesses: 0,
     guessHistoryString: '',
   };
@@ -31,7 +31,7 @@ class App extends Component {
       numberToGuess: Math.floor(Math.random() * 100) + 1,
       currentNumber: '',
       currentGuessNumber: '',
-      hintText: '',
+      hintText: "I'll give you a hint",
       numberOfGuesses: 0,
       guessHistoryString: '',
     });
@@ -45,9 +45,21 @@ class App extends Component {
 
   testNumber = () => {
     let hintText;
-    Math.abs(this.state.currentGuessNumber - this.state.numberToGuess) < 10
-      ? (hintText = 'Blizu si')
-      : (hintText = 'Daleko si');
+    const dif = Math.abs(this.state.currentGuessNumber - this.state.numberToGuess);
+    switch (true) {
+      case dif <= 10 && dif > 0:
+        hintText = 'You are close!!!';
+        break;
+      case dif > 10:
+        hintText = 'Far away...';
+        break;
+      default:
+        hintText = 'CORRECT!!!';
+    }
+
+    // Math.abs(this.state.currentGuessNumber - this.state.numberToGuess) < 10
+    //   ? (hintText = 'You are close!!!')
+    //   : (hintText = 'Far away...');
     this.setState({
       hintText: hintText,
       numberOfGuesses: this.state.numberOfGuesses + 1,
@@ -66,8 +78,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1 style={{ color: 'white' }}>Guess the number!</h1>
-        <DebugDiv numberToGuess={this.state.numberToGuess} />
+        <h1 style={{ color: 'white', marginTop: '40px' }}>Guess the number(1-100)!</h1>
+        {/* <DebugDiv numberToGuess={this.state.numberToGuess} /> */}
         <Hint hintText={this.state.hintText} />
         <InputNumber
           currentGuessNumber={this.state.currentGuessNumber}
