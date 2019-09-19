@@ -55,6 +55,9 @@ class App extends Component {
         break;
       default:
         hintText = 'CORRECT!!!';
+        setTimeout(() => {
+          this.resetGame();
+        }, 3000);
     }
 
     // Math.abs(this.state.currentGuessNumber - this.state.numberToGuess) < 10
@@ -65,6 +68,7 @@ class App extends Component {
       numberOfGuesses: this.state.numberOfGuesses + 1,
       guessHistoryString:
         this.state.guessHistoryString + ' ' + this.state.currentGuessNumber,
+      currentGuessNumber: '',
     });
     console.log(this.state.numberOfGuesses);
   };
