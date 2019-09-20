@@ -6,8 +6,7 @@ import GuessTryNumber from './components/GuessTryNumber';
 import GuessHistory from './components/GuessHistory';
 import NewGame from './components/NewGame';
 import Instructions from './components/Instructions';
-// import DebugDiv from './components/DebugDiv';
-import './components/style.css';
+import DebugDiv from './components/DebugDiv';
 
 class App extends Component {
   state = {
@@ -16,6 +15,7 @@ class App extends Component {
     hintText: "I'll give you a hint",
     numberOfGuesses: 0,
     guessHistoryString: '',
+    gameOver: false,
   };
 
   componentDidMount() {
@@ -31,6 +31,7 @@ class App extends Component {
       hintText: "I'll give you a hint",
       numberOfGuesses: 0,
       guessHistoryString: '',
+      gameOver: false,
     });
   };
 
@@ -47,20 +48,21 @@ class App extends Component {
       numberToGuess,
       numberOfGuesses,
       guessHistoryString,
+      gameOver,
     } = this.state;
     const dif = Math.abs(currentGuessNumber - numberToGuess);
     switch (true) {
-      case dif <= 10 && dif > 0:
-        hintText = 'You are close!!!';
+      case dif > 0 && dif <= 5:
+        hintText = 'Almost got it!!!';
+        break;
+      case dif > 5 && dif <= 15:
+        hintText = 'You are close!';
         break;
       case dif > 10:
         hintText = 'Far away...';
         break;
       default:
         hintText = 'CORRECT!!!';
-        setTimeout(() => {
-          this.resetGame();
-        }, 3000);
     }
 
     this.setState({
@@ -68,8 +70,10 @@ class App extends Component {
       numberOfGuesses: numberOfGuesses + 1,
       guessHistoryString: `${guessHistoryString} ${currentGuessNumber}`,
       currentGuessNumber: '',
+      gameOver: hintText === 'CORRECT!!!' ? true : false,
     });
     console.log(numberOfGuesses);
+    console.log(gameOver);
   };
 
   handleInput = (e) => {
@@ -85,14 +89,16 @@ class App extends Component {
       currentGuessNumber,
       numberOfGuesses,
       guessHistoryString,
+      gameOver,
     } = this.state;
     return (
       <>
         <h1 style={{ color: 'white', marginTop: '40px' }}>Guess the number(1-100)!</h1>
-        {/* <DebugDiv numberToGuess={this.state.numberToGuess} /> */}
+        <DebugDiv numberToGuess={this.state.numberToGuess} />
         <Hint hintText={hintText} />
         <InputNumber
           currentGuessNumber={currentGuessNumber}
+          gameOver={gameOver}
           updateValue={this.updateValue}
           testNumber={this.testNumber}
           handleInput={this.handleInput}
