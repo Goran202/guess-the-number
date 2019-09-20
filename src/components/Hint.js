@@ -1,15 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Hint = (props) => {
+const Hint = ({ hintText }) => {
   const styles = {
     // backgroundColor: 'blue',
     // color: 'yellow',
   };
   return (
     <div className="block btn btn-warning" style={styles}>
-      {props.hintText}
+      {hintText}
     </div>
   );
 };
 
+Hint.propTypes = {
+  hintText: PropTypes.string.isRequired,
+};
 export default Hint;

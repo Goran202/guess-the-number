@@ -1,15 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const DebugDiv = (props) => {
+const DebugDiv = ({ numberToGuess }) => {
   const styles = {
     backgroundColor: 'green',
     color: 'black',
   };
   return (
     <div className="block btn" style={styles}>
-      DebugDiv: {props.numberToGuess}
+      DebugDiv:
+      {numberToGuess}
     </div>
   );
+};
+
+DebugDiv.propTypes = {
+  numberToGuess: PropTypes.number.isRequired,
 };
 
 export default DebugDiv;

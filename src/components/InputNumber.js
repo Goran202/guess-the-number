@@ -1,20 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const InputNumber = (props) => {
+const InputNumber = ({ handleInput, currentGuessNumber, updateValue }) => {
   const styles = {
     // backgroundColor: 'orange',
     // color: 'black',
   };
   return (
-    <form onSubmit={props.handleInput}>
+    <form onSubmit={handleInput}>
       <input
         placeholder="Type in your guess..."
         className="block form-control"
         type="number"
         min="1"
         max="100"
-        value={props.currentGuessNumber}
-        onChange={props.updateValue}
+        value={currentGuessNumber}
+        onChange={updateValue}
         style={styles}
       />
       <input
@@ -22,10 +23,16 @@ const InputNumber = (props) => {
         style={styles}
         type="button"
         value="Make a guess!"
-        onClick={props.handleInput}
+        onClick={handleInput}
       />
     </form>
   );
+};
+
+InputNumber.propTypes = {
+  currentGuessNumber: PropTypes.number.isRequired,
+  updateValue: PropTypes.func.isRequired,
+  handleInput: PropTypes.func.isRequired,
 };
 
 export default InputNumber;
