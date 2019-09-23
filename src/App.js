@@ -94,7 +94,7 @@ class App extends Component {
     return (
       <>
         <h1 style={{ color: 'white', marginTop: '40px' }}>Guess the number (1-100)!</h1>
-        <DebugDiv numberToGuess={this.state.numberToGuess} />
+        {/* <DebugDiv numberToGuess={this.state.numberToGuess} /> */}
         <Hint hintText={hintText} />
         <InputNumber
           currentGuessNumber={currentGuessNumber}
