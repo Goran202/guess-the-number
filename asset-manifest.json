@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/guess-the-number/static/css/main.29d73149.chunk.css",
-    "main.js": "/guess-the-number/static/js/main.b1837f4a.chunk.js",
-    "main.js.map": "/guess-the-number/static/js/main.b1837f4a.chunk.js.map",
+    "main.css": "/guess-the-number/static/css/main.215b4765.chunk.css",
+    "main.js": "/guess-the-number/static/js/main.f663d41b.chunk.js",
+    "main.js.map": "/guess-the-number/static/js/main.f663d41b.chunk.js.map",
     "runtime~main.js": "/guess-the-number/static/js/runtime~main.f2fb5971.js",
     "runtime~main.js.map": "/guess-the-number/static/js/runtime~main.f2fb5971.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/guess-the-number/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.035b82ec.chunk.js": "/guess-the-number/static/js/2.035b82ec.chunk.js",
-    "static/js/2.035b82ec.chunk.js.map": "/guess-the-number/static/js/2.035b82ec.chunk.js.map",
+    "static/js/2.5137fdc4.chunk.js": "/guess-the-number/static/js/2.5137fdc4.chunk.js",
+    "static/js/2.5137fdc4.chunk.js.map": "/guess-the-number/static/js/2.5137fdc4.chunk.js.map",
     "index.html": "/guess-the-number/index.html",
-    "precache-manifest.ff034667c08929fc5b6a9d9814420346.js": "/guess-the-number/precache-manifest.ff034667c08929fc5b6a9d9814420346.js",
+    "precache-manifest.d2528c3070542a1ccc5a519bbf959df5.js": "/guess-the-number/precache-manifest.d2528c3070542a1ccc5a519bbf959df5.js",
     "service-worker.js": "/guess-the-number/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/guess-the-number/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.29d73149.chunk.css.map": "/guess-the-number/static/css/main.29d73149.chunk.css.map"
+    "static/css/main.215b4765.chunk.css.map": "/guess-the-number/static/css/main.215b4765.chunk.css.map"
   }
 }
