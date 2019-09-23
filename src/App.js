@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
 import Hint from './components/Hint';
 import InputNumber from './components/InputNumber';
 import GuessTryNumber from './components/GuessTryNumber';
