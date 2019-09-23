@@ -19,7 +19,7 @@ module.exports = {
   parser: 'babel-eslint',
   plugins: ['react'],
   rules: {
-    //'linebreak-style': ['error', 'windows'],
+    'linebreak-style': ['error', 'windows'],
     //'comma-dangle': ['error', 'never'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/forbid-prop-types': 0,
