@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 const DebugDiv = ({ numberToGuess }) => {
   const styles = {
     backgroundColor: 'green',
-    color: 'black',
+    color: 'white',
   };
   return (
-    <div className="block btn" style={styles}>
+    <div className="block notbtn" style={styles}>
       DebugDiv:
       {numberToGuess}
     </div>

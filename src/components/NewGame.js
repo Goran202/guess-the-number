@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const NewGame = ({ resetGame }) => {
   const styles = {
     backgroundColor: 'blue',
-    color: 'black',
+    color: 'white',
   };
   return (
     <button className="block btn" type="button" style={styles} onClick={resetGame}>

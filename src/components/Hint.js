@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 const Hint = ({ hintText }) => {
   const styles = {
-    // backgroundColor: 'blue',
-    // color: 'yellow',
+    backgroundColor: '#ffc107',
+    color: 'white',
   };
   return (
-    <div className="block btn btn-warning" style={styles}>
+    <div className="block notbtn" style={styles}>
       {hintText}
     </div>
   );

@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const InputNumber = ({ gameOver, handleInput, currentGuessNumber, updateValue }) => {
-  const styles = {
-    // backgroundColor: 'orange',
-    // color: 'black',
-  };
   return (
     <form onSubmit={handleInput}>
       <input
@@ -16,12 +12,10 @@ const InputNumber = ({ gameOver, handleInput, currentGuessNumber, updateValue })
         max="100"
         value={currentGuessNumber}
         onChange={updateValue}
-        style={styles}
         disabled={gameOver}
       />
       <input
         className="block btn btn-primary"
-        style={styles}
         type="submit"
         value="Make a guess!"
         disabled={gameOver}

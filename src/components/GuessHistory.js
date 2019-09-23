@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const GuessHistory = ({ guessHistoryString }) => {
   const styles = {
-    // backgroundColor: 'grey',
-    // color: 'black',
+    backgroundColor: '#6c757d',
+    color: 'white',
     whiteSpace: 'nowrap',
   };
   return (
-    <div className="block btn btn-secondary" style={styles}>
+    <div className="block notbtn" style={styles}>
       Guesses:
       {guessHistoryString}
     </div>
